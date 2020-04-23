@@ -54,7 +54,7 @@ if [ -e ~/.zinit/bin/zinit.zsh ]; then
     . ~/.zinit/bin/zinit.zsh
 
     zinit light zsh-users/zsh-autosuggestions
-    zinit wait lucid atload"zicompinit zicdreplay" blockf for zsh-users/zsh-completions
+    zinit wait lucid atload"zicompinit; zicdreplay" blockf for zsh-users/zsh-completions
 fi
 
 # --------------------------------------------------------------------------------
