@@ -9,6 +9,7 @@ local formula=(
     "ripgrep"
     "tig"
     "zsh"
+    "tmux"
 )
 
 setup_homebrew () {
