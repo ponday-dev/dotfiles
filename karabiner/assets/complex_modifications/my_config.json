@@ -1,0 +1,23 @@
+{
+    "title": "My Configurations",
+    "rules": [
+        {
+            "description": "caps_lock -> ctrl + shift",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "caps_lock"
+                    },
+                    "to": [
+                        {
+                            "key_code": "spacebar",
+                            "modifiers": ["left_control"]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+

@@ -15,4 +15,5 @@ install () {
     done
 
     link_vim_config $repo_dir
+    link_karabiner_config $repo_dir
 }
