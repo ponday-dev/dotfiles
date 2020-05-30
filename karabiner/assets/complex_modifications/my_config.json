@@ -2,7 +2,7 @@
     "title": "My Configurations",
     "rules": [
         {
-            "description": "caps_lock -> ctrl + shift",
+            "description": "caps_lock -> ctrl + space",
             "manipulators": [
                 {
                     "type": "basic",
