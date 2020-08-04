@@ -46,6 +46,34 @@ alias gs='git branch | fzf --height 30% | xargs git checkout'
 alias gr='git branch | fzf --height 30% | xargs git branch -d'
 alias gb='git branch'
 
+repo() {
+    if [ "$1" = "open" ]; then
+        cd_to_repo
+    fi
+
+    if [ "$1" = "browse" ]; then
+        browse_repo
+    fi
+}
+
+# change directory that be managed by ghq
+cd_to_repo() {
+    local repo=`ghq list | fzf --height 30%`
+
+    if [ -n "$repo" ]; then
+        cd `ghq root`/$repo
+    fi
+}
+
+# browse repository that be managed by ghq
+browse_repo() {
+    local repo=`ghq list | fzf --height 30%`
+
+    if [ -n "$repo" ]; then
+        hub browse `echo "$repo" | cut -d "/" -f 2,3`
+    fi
+}
+
 # --------------------------------------------------------------------------------
 # ghq config
 # --------------------------------------------------------------------------------
