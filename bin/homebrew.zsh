@@ -4,12 +4,15 @@ local formula=(
     "asdf"
     "autoconf"
     "automake"
+    "gpg" # required asdf-nodejs
     "fzf"
     "jq"
     "ripgrep"
     "tig"
     "zsh"
     "tmux"
+    "ghq"
+    "hub"
 )
 
 setup_homebrew () {
@@ -18,4 +21,6 @@ setup_homebrew () {
 
 setup_formula () {
     brew install $formula
+    brew install vim --with-override-system-vi
 }
+
