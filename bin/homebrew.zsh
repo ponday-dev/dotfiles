@@ -13,6 +13,7 @@ local formula=(
     "tmux"
     "ghq"
     "hub"
+    "vim"
 )
 
 setup_homebrew () {
@@ -21,6 +22,5 @@ setup_homebrew () {
 
 setup_formula () {
     brew install $formula
-    brew install vim --with-override-system-vi
 }
 
